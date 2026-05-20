@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Brown Sage — For the leaders shaping Indian oncology</title>
+<meta name="description" content="A quiet introduction to The Brown Sage — for the senior figures whose guidance and perspective shape how oncology is practised in India.">
+<meta name="robots" content="noindex, nofollow">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+  *{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    --brown:#1a0f0a;--brown-mid:#2a1810;--brown-soft:#4a3528;
+    --gold:#c9883e;--gold-soft:#d9a05a;--gold-light:#e0a960;
+    --cream:#f5f0e8;--warm:#e8ddd0;--warm-deep:#dfd1bf;
+    --text-dark:#2d1a0e;--text-mid:#6b4c38;--text-light:#a07a62;
+    --card-bg:#ffffff;--border:#e5ddd6;--rule:#d4c5a9;
+    --paper:#fefcf8;
+  }
+  html{scroll-behavior:smooth}
+  body{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--text-dark);min-height:100vh;-webkit-font-smoothing:antialiased;line-height:1.7;font-weight:300}
+  section[id]{scroll-margin-top:90px}
+
+  /* ===== STICKY NAV ===== */
+  .web-nav{background:rgba(254,252,248,0.97);padding:1rem 2.5rem;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;backdrop-filter:blur(10px);box-shadow:0 1px 0 var(--border)}
+  .web-logo{display:flex;align-items:center;gap:0.6rem;font-family:'Playfair Display',serif;font-size:1.15rem;color:var(--brown);font-weight:400;text-decoration:none}
+  .web-logo-block{display:flex;flex-direction:column;gap:0;line-height:1.1}
+  .web-logo-tag{font-family:'JetBrains Mono',monospace;font-size:0.62rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--text-light);margin-top:3px;font-weight:500}
+  .web-nav .tbs-mark{width:32px;height:32px;display:inline-flex;align-items:center;justify-content:center}
+
+  /* ===== HERO ===== */
+  .hero{padding:6rem 2.5rem 4rem;text-align:left;max-width:840px;margin:0 auto}
+  .hero-eyebrow{font-family:'JetBrains Mono',monospace;font-size:0.72rem;letter-spacing:0.22em;color:var(--gold);text-transform:uppercase;margin-bottom:1.5rem;font-weight:500}
+  .hero h1{font-family:'Playfair Display',serif;font-size:2.6rem;color:var(--brown);font-weight:400;line-height:1.15;letter-spacing:-0.012em;max-width:24ch;margin-bottom:1.5rem}
+  .hero h1 em{color:var(--gold);font-style:italic;font-weight:400}
+  .hero-sub{font-family:'Playfair Display',serif;font-style:italic;font-size:1.2rem;color:var(--text-mid);line-height:1.6;max-width:62ch}
+  .hero-gold-rule{width:48px;height:3px;background:var(--gold);margin:2.5rem 0 0}
+
+  /* ===== SECTION ===== */
+  .web-section{padding:4rem 2.5rem;max-width:840px;margin:0 auto}
+  .section-eyebrow{font-family:'JetBrains Mono',monospace;font-size:0.7rem;letter-spacing:0.22em;color:var(--gold);text-transform:uppercase;margin-bottom:1.2rem;font-weight:500}
+  .section-heading{font-family:'Playfair Display',serif;font-size:2rem;color:var(--brown);font-weight:400;line-height:1.2;letter-spacing:-0.008em;margin-bottom:1.5rem}
+  .section-heading em{color:var(--gold);font-style:italic;font-weight:400}
+
+  /* Prose */
+  .prose{font-size:1.02rem;line-height:1.85;color:var(--brown-soft);font-weight:400}
+  .prose p{margin-bottom:1.2rem}
+  .prose p:last-child{margin-bottom:0}
+  .prose strong{color:var(--brown);font-weight:600}
+  .prose em{font-style:italic;color:var(--brown-soft)}
+
+  /* ===== ARCHITECTURE — three layer cards (lifted from For Oncologists, simplified) ===== */
+  .arch-grid{display:grid;grid-template-columns:1fr;gap:1.25rem;margin-top:2rem}
+  .layer-card{background:var(--card-bg);border:1px solid var(--border);border-left:3px solid var(--gold);border-radius:0 4px 4px 0;padding:1.5rem 1.75rem}
+  .layer-head{display:flex;align-items:baseline;gap:1rem;margin-bottom:0.6rem}
+  .layer-label{font-family:'JetBrains Mono',monospace;font-size:0.7rem;letter-spacing:0.16em;color:var(--gold);font-weight:600;background:var(--cream);padding:3px 9px;border-radius:3px;text-transform:uppercase}
+  .layer-name{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--brown);font-weight:500;line-height:1.2}
+  .layer-name em{color:var(--gold);font-style:italic;font-weight:400}
+  .layer-desc{font-size:0.95rem;color:var(--text-mid);line-height:1.7}
+  .layer-desc strong{color:var(--brown);font-weight:600}
+
+  /* ===== WHERE YOU COME IN — possibilities (not prescriptions) ===== */
+  .possibility-list{margin-top:1.5rem}
+  .possibility{padding:1.1rem 0;border-bottom:1px dashed var(--rule)}
+  .possibility:last-child{border-bottom:none}
+  .possibility-label{font-family:'JetBrains Mono',monospace;font-size:0.66rem;letter-spacing:0.18em;color:var(--gold);text-transform:uppercase;font-weight:600;margin-bottom:0.4rem}
+  .possibility-text{font-size:1rem;color:var(--brown-soft);line-height:1.65}
+  .possibility-text strong{color:var(--brown);font-weight:600}
+
+  /* ===== QA BLOCKS — for the two questions, in calm prose register ===== */
+  .qa-block{margin-top:2rem;padding-top:2rem;border-top:1px dashed var(--rule)}
+  .qa-block:first-of-type{margin-top:2.5rem;padding-top:2rem;border-top:1px dashed var(--rule)}
+  .qa-question{font-family:'Playfair Display',serif;font-size:1.35rem;color:var(--brown);font-weight:500;line-height:1.35;margin-bottom:1.1rem;letter-spacing:-0.005em}
+  .qa-question em{color:var(--gold);font-style:italic;font-weight:400}
+  .qa-answer{font-size:0.98rem;line-height:1.8;color:var(--brown-soft);font-weight:400}
+  .qa-answer p{margin-bottom:1rem}
+  .qa-answer p:last-child{margin-bottom:0}
+  .qa-answer strong{color:var(--brown);font-weight:600}
+  .qa-answer em{font-style:italic}
+
+  /* ===== A NOTE ON THE WORK ===== */
+  .note-block{background:var(--cream);border-left:3px solid var(--gold);padding:1.5rem 1.85rem;border-radius:0 3px 3px 0;margin-top:1.5rem}
+  .note-block p{font-family:'Playfair Display',serif;font-style:italic;font-size:1.05rem;color:var(--brown-soft);line-height:1.7;margin-bottom:0.9rem}
+  .note-block p:last-child{margin-bottom:0}
+  .note-block strong{color:var(--brown);font-weight:600;font-style:normal}
+
+  /* ===== CONTACT BLOCK — direct, calm, no CTA ===== */
+  .contact-block{margin-top:2rem;padding:2rem 2.25rem;background:var(--card-bg);border:1px solid var(--border);border-radius:6px}
+  .contact-intro{font-family:'Playfair Display',serif;font-style:italic;font-size:1.05rem;color:var(--brown-soft);line-height:1.6;margin-bottom:1.5rem;max-width:54ch}
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin-bottom:1.5rem}
+  .contact-row{display:flex;flex-direction:column;gap:0.3rem}
+  .contact-label{font-family:'JetBrains Mono',monospace;font-size:0.62rem;letter-spacing:0.2em;color:var(--gold);text-transform:uppercase;font-weight:600}
+  .contact-value{font-size:1.02rem;color:var(--brown);font-weight:500;text-decoration:none}
+  a.contact-value:hover{color:var(--gold);text-decoration:none}
+  .contact-credentials{padding-top:1.25rem;border-top:1px dashed var(--rule);font-family:'Playfair Display',serif;font-style:italic;font-size:0.92rem;color:var(--text-mid);line-height:1.55}
+  .contact-credentials strong{font-style:normal;color:var(--brown);font-weight:500;display:block;margin-bottom:3px;font-size:1.02rem}
+
+  /* ===== FOOTER ===== */
+  .web-footer{background:var(--brown);color:rgba(255,255,255,0.6);padding:3rem 2.5rem 2.5rem;margin-top:4rem}
+  .web-footer-inner{max-width:840px;margin:0 auto;display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1.5rem}
+  .web-footer-left p{color:rgba(255,255,255,0.6);font-size:0.85rem;line-height:1.7;max-width:42ch}
+  .web-footer-left p:first-child{color:var(--gold);font-family:'Playfair Display',serif;font-style:italic;font-size:0.95rem;margin-bottom:0.5rem}
+  .web-footer-right{font-family:'JetBrains Mono',monospace;font-size:0.68rem;letter-spacing:0.12em;color:rgba(255,255,255,0.4);text-transform:uppercase}
+
+  /* Responsive */
+  @media(max-width:780px){
+    .hero{padding:4rem 1.5rem 3rem}
+    .hero h1{font-size:2rem}
+    .web-section{padding:3rem 1.5rem}
+    .section-heading{font-size:1.55rem}
+    .contact-grid{grid-template-columns:1fr;gap:1rem}
+    .web-footer{padding:2.5rem 1.5rem 2rem}
+    .web-footer-inner{flex-direction:column;align-items:flex-start}
+  }
+</style>
+</head>
+<body>
+
+  <!-- ===================================================================== -->
+  <!-- NAV                                                                    -->
+  <!-- ===================================================================== -->
+  <nav class="web-nav">
+    <a href="/" class="web-logo">
+      <svg class="tbs-mark" viewBox="0 0 36 48" xmlns="http://www.w3.org/2000/svg" fill="none">
+        <line x1="18" y1="2" x2="18" y2="46" stroke="#c9883e" stroke-width="1.5"/>
+        <ellipse cx="11" cy="13" rx="6" ry="2.2" fill="#1a0f0a" opacity="0.7"/>
+        <ellipse cx="25" cy="13" rx="6" ry="2.2" fill="#1a0f0a" opacity="0.7"/>
+        <ellipse cx="11" cy="24" rx="6" ry="2.2" fill="#1a0f0a"/>
+        <ellipse cx="25" cy="24" rx="6" ry="2.2" fill="#1a0f0a"/>
+        <ellipse cx="11" cy="35" rx="6" ry="2.2" fill="#1a0f0a" opacity="0.7"/>
+        <ellipse cx="25" cy="35" rx="6" ry="2.2" fill="#1a0f0a" opacity="0.7"/>
+        <circle cx="18" cy="24" r="2.4" fill="#c9883e"/>
+      </svg>
+      <span class="web-logo-block">
+        <span>The <span style="color:var(--gold);font-style:italic">Brown Sage</span></span>
+        <span class="web-logo-tag">Cancer Care GPS</span>
+      </span>
+    </a>
+  </nav>
+
+  <!-- ===================================================================== -->
+  <!-- HERO — quiet, grateful, no ask                                         -->
+  <!-- ===================================================================== -->
+  <section class="hero">
+    <div class="hero-eyebrow">Cancer Care GPS · For the leaders shaping Indian oncology</div>
+    <h1>A quiet introduction <em>to the work</em>.</h1>
+    <p class="hero-sub">We are grateful that you have given this page even a moment of your attention. What follows is a short account of what we are building, and where — should you wish — your perspective might shape it.</p>
+    <div class="hero-gold-rule"></div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- WHAT WE ARE BUILDING — essay register, no feature list                 -->
+  <!-- ===================================================================== -->
+  <section class="web-section" id="what">
+    <div class="section-eyebrow">What we are building</div>
+    <h2 class="section-heading">A navigation intelligence layer <em>for oncology</em>.</h2>
+    <div class="prose">
+      <p>An Indian cancer patient's journey begins not with a clinical conversation, but with a stack of mismatched records — biopsies from one lab, imaging from another, OPD notes from a third hospital, prescriptions from a fourth. Before any specialist can think clearly about the case, those records have to be read, structured, and understood. That hour of structuring work — multiplied across every consultation, every second opinion, every tumour board — is where most of Indian oncology's lost time lives.</p>
+      <p>The Brown Sage is a platform that does the structuring before the clinical conversation begins. It reads a patient's records, organises them into a structured clinical view, and routes that case — by clinical fit — to a senior oncologist, to a tumour board, to a clinical trial match, to a regional referral network.</p>
+      <p>In plain words: it is a navigation intelligence layer for oncology. The work is not summarisation. It is orientation — knowing where a case actually stands, and who it should reach.</p>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- ARCHITECTURE — three layers, simplified for this audience              -->
+  <!-- ===================================================================== -->
+  <section class="web-section" id="architecture">
+    <div class="section-eyebrow">The architecture, briefly</div>
+    <h2 class="section-heading">Three layers, working <em>in sequence</em>.</h2>
+    <div class="prose">
+      <p>The platform is built as three distinct layers of intelligence. Each does one thing well; the work compounds across them.</p>
+    </div>
+
+    <div class="arch-grid">
+
+      <div class="layer-card">
+        <div class="layer-head">
+          <span class="layer-label">L1</span>
+          <span class="layer-name">Clinical <em>Intelligence</em></span>
+        </div>
+        <div class="layer-desc">Reads and structures the patient's records — every report linked to its source, every value tagged with confidence and extraction status, every conflict between documents flagged for human resolution. The case that reaches the specialist is not a folder of mixed documents; it is a verified clinical view.</div>
+      </div>
+
+      <div class="layer-card">
+        <div class="layer-head">
+          <span class="layer-label">L2</span>
+          <span class="layer-name">Matchmaking <em>Intelligence</em></span>
+        </div>
+        <div class="layer-desc">Routes a structured case to the clinical mind best suited to read it — by sub-specialty, by case-type focus, by clinical depth. This is the layer that does the real translation work: putting the right case in front of the right reader, wherever the case ultimately goes — to a written response, a tumour board, a referral, a trial.</div>
+      </div>
+
+      <div class="layer-card">
+        <div class="layer-head">
+          <span class="layer-label">L3</span>
+          <span class="layer-name">Knowledge <em>Layer</em></span>
+        </div>
+        <div class="layer-desc">Scores every case against published guideline standards — National Cancer Grid (India's Tata Memorial-led standard), ICMR, and NCCN. Output is FHIR-interoperable; any hospital EMR or tumour board system can consume it directly. The patient sees how their plan compares to what India's top cancer centres recommend for their exact profile.</div>
+      </div>
+
+    </div>
+
+    <div class="prose" style="margin-top:1.75rem">
+      <p><em>L1 reads. L2 routes. L3 knows.</em> The compounding across these three layers is where the platform's real value lives.</p>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- TWO QUESTIONS WE EXPECT — Clinical Intelligence + Privacy              -->
+  <!-- ===================================================================== -->
+  <section class="web-section" id="questions">
+    <div class="section-eyebrow">Two questions we expect</div>
+    <h2 class="section-heading">The shape of <em>two reasonable concerns</em>.</h2>
+    <div class="prose">
+      <p>Senior leaders in oncology see a great deal of health-tech in motion. Two questions tend to come up early; we have thought about them carefully and answer them here in the same register as the rest of this page.</p>
+    </div>
+
+    <!-- Question 01 -->
+    <div class="qa-block">
+      <div class="qa-question">How is <em>The Brown Sage Clinical Intelligence</em> different from a general AI tool?</div>
+      <div class="qa-answer">
+        <p>A patient or clinician can upload records to a general AI tool and ask it questions; many already do. The structural difference is in what arrives on the desk, and what has been done to it before it gets there.</p>
+        <p><strong>Source-linked, not chat-generated.</strong> Every extracted field carries its source quote and source document. Every field is tagged with confidence (high / medium / low) and extraction status (confirmed / inferred). A general AI tool produces confident text regardless of whether the underlying signal is solid; this system surfaces the signal-strength of every value explicitly.</p>
+        <p><strong>Conflict-resolved, not silently blended.</strong> Case fusion across multiple documents applies explicit source priority by document type, then recency, then confidence. Conflicts that cannot be safely auto-resolved are surfaced for human adjudication and blocked from driving guideline selection until reviewed.</p>
+        <p><strong>Verified by a Case Manager, not the patient.</strong> A Case Manager reviews every extracted value against the source records before the case reaches a clinical reader. Completeness is a precondition, not an afterthought — cancer-specific playbooks flag missing required documents before the case is routed.</p>
+        <p>The AI here works for the clinician, not in place of the clinician. The clinical reasoning that follows is entirely a human's.</p>
+      </div>
+    </div>
+
+    <!-- Question 02 -->
+    <div class="qa-block">
+      <div class="qa-question">How is <em>data privacy</em> handled?</div>
+      <div class="qa-answer">
+        <p>Patient records are protected by three architectural commitments, each built into the platform rather than added on.</p>
+        <p><strong>Seen only by the case team, not by anyone else.</strong> Records are encrypted at rest and in transit. Access is limited to the Case Manager who structures the case and the clinician who reads it — and each only for the workflow window that requires it. No marketing access, no engineering access, no general staff access. Full compliance with India's Digital Personal Data Protection Act, 2023.</p>
+        <p><strong>Used only for the case, not for anything else.</strong> The identifiable records uploaded by a patient are used only for that patient's case. They are never used to train our models, never sold, never shared. Research on properly de-identified data is something the platform will support in the future, with patient consent — but no such use exists today.</p>
+        <p><strong>Owned by the patient, not by the platform.</strong> Patients can request deletion of their records at any time, honoured within 7 working days. Records also remain downloadable to the patient for as long as they want them. The platform is a stop on the journey, not a destination.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- WHERE YOU COME IN — possibilities, not prescriptions                   -->
+  <!-- ===================================================================== -->
+  <section class="web-section" id="where-you-come-in">
+    <div class="section-eyebrow">Where you come in</div>
+    <h2 class="section-heading">A few <em>possibilities</em>, in whatever form feels natural.</h2>
+    <div class="prose">
+      <p>We are not here to ask for anything in particular. Your time and attention are limited, and we know it. What follows is a list of forms in which your engagement could shape this work — should you wish to engage at all. None of these is expected, requested, or assumed.</p>
+    </div>
+
+    <div class="possibility-list">
+
+      <div class="possibility">
+        <div class="possibility-label">A conversation</div>
+        <div class="possibility-text"><strong>Twenty minutes of your time, in person.</strong> We would travel to you, in Mumbai or wherever you prefer. The platform is best experienced live, walked through on a real case, with your questions answered in the moment. No deck. Just the work.</div>
+      </div>
+
+      <div class="possibility">
+        <div class="possibility-label">A thought</div>
+        <div class="possibility-text"><strong>A written reaction.</strong> If twenty minutes is too much, a few lines on what you find compelling, what you find concerning, or what you think we are missing — sent at your convenience — would shape the work materially.</div>
+      </div>
+
+      <div class="possibility">
+        <div class="possibility-label">An introduction</div>
+        <div class="possibility-text"><strong>A name worth meeting.</strong> If, in reading this, someone comes to mind whose perspective would shape this work — a colleague, a former trainee, a researcher — we would be grateful for the introduction.</div>
+      </div>
+
+      <div class="possibility">
+        <div class="possibility-label">Visible association</div>
+        <div class="possibility-text"><strong>A name on the page.</strong> Some of the figures we hold in highest regard may eventually feel willing to be associated with the work, in whatever form they find dignified. This is offered as a possibility, not a request. It earns its place only after the work has earned theirs.</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- A NOTE ON THE WORK — work has just begun, perspectives shape direction -->
+  <!-- ===================================================================== -->
+  <section class="web-section" id="note-on-the-work">
+    <div class="section-eyebrow">A note on the work</div>
+    <h2 class="section-heading">The work has <em>just begun</em>.</h2>
+
+    <div class="note-block">
+      <p>The platform is live, and the first cases are beginning to move through it. The architecture is in place. But this is the earliest part of a long journey. The depth of clinical learning ahead — across cancer types, treatment intents, decision points, edge cases — is exactly the work that lies in front of us, not behind.</p>
+      <p>The platform will get sharper with every case it sees. The structured extraction will get more reliable. The matchmaking will get more precise. The guideline-concordance scoring will deepen. None of this is finished, and none of it pretends to be.</p>
+      <p>This is precisely why we are reaching out to you, not later but now. <strong>The perspectives that shape this work in its early form will shape what it becomes.</strong> The decisions we make in the next several months — about what to build, what to leave aside, where to focus the clinical work — will be more thoughtfully made if shaped by those who have seen this field long enough to know where it actually needs to go.</p>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- CONTACT — direct, calm, no CTA, "I'll come to you" gesture             -->
+  <!-- ===================================================================== -->
+  <section class="web-section" id="contact">
+    <div class="section-eyebrow">Looking forward to meeting you personally</div>
+    <h2 class="section-heading">Direct <em>contact</em>, whenever the moment is right.</h2>
+
+    <div class="contact-block">
+      <p class="contact-intro">There is no form to fill, no calendar link to book. Drop a short note, or a phone call when it suits you, and I will arrange to travel to wherever you are.</p>
+
+      <div class="contact-grid">
+        <div class="contact-row">
+          <div class="contact-label">Email</div>
+          <a href="mailto:drpritesh@ecuretrip.com" class="contact-value">drpritesh@ecuretrip.com</a>
+        </div>
+        <div class="contact-row">
+          <div class="contact-label">Phone · WhatsApp</div>
+          <a href="https://wa.me/919773458283" class="contact-value">+91 97734 58283</a>
+        </div>
+      </div>
+
+      <div class="contact-credentials">
+        <strong>Dr Pritesh Shah</strong>
+        MD Radiodiagnosis (TMH) · CPHM (ISB) · EPHM (IIM) · Founder, The Brown Sage
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- FOOTER                                                                 -->
+  <!-- ===================================================================== -->
+  <footer class="web-footer">
+    <div class="web-footer-inner">
+      <div class="web-footer-left">
+        <p>वसुधैव कुटुम्बकम् · The world is one family</p>
+        <p>The Brown Sage · Cancer Care GPS — a navigation intelligence layer for oncology. Built in Ahmedabad. Serving patients, irrespective of geography.</p>
+      </div>
+      <div class="web-footer-right">
+        Page for the leaders<br>
+        thebrownsage.com/for-the-leaders
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
